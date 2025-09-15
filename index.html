@@ -206,10 +206,12 @@ function checkResult(){
   if(rinKaWin){
     document.getElementById('result').innerText=" 🎉124万借金返済🎉";
     lamp.classList.add('on');
+    lamp.style.color = "#000"; // ← 黒文字に変更
     lamp.innerText = "太陽"; // 光る文字
   } else if(final[0]===final[1] && final[1]===final[2]){
     document.getElementById('result').innerText="調子いいぞー！";
     lamp.classList.add('on');
+    lamp.style.color = "#000"; // ← 黒文字に変更
     lamp.innerText = "太陽"; // 光る文字
   } else {
     document.getElementById('result').innerText="外れだバーカ！";
